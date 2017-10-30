@@ -21,7 +21,7 @@
     <td><strong>用于并行处理大型数据集的基于YARN的系统</strong></td>
   </tr>
 </table>
-<span>Apache其他hadoop相关项目包括：</span>
+<h4>Apache其他hadoop相关项目包括：</h4>
 <ul>
   <li>Ambari™：用于配置，管理和监控Apache Hadoop集群的基于Web的工具，其中包括支持Hadoop HDFS，Hadoop MapReduce，Hive，HCatalog，HBase，ZooKeeper，Oozie，Pig和Sqoop。 Ambari还提供了一个用于查看集群健康状况的仪表板，如热图和可视化查看MapReduce，Pig和Hive应用程序以及以用户友好的方式诊断其性能特征的功能。</li>
   <li>Avro™：数据序列化系统。</li>
