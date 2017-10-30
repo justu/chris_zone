@@ -2,7 +2,7 @@
 
 <strong>Apache Hadoop软件库是一个框架，允许在使用简单编程模型的计算机集群上对大型数据集进行分布式处理。 它旨在从单个服务器扩展到数千台机器，每台机器都提供本地计算和存储</strong>
 
-<span>主要包括如下模块：</span>
+<h4>主要包括如下模块：</h4>
 <table>
   <tr>
     <td>Hadoop Common</td>
