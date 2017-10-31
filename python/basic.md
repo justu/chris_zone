@@ -61,3 +61,47 @@
     <td>将值转换为字符串</td>
   </tr>
 </table>
+
+<h3>列表和元组常用函数</h3>
+<table>
+  <tr>
+    <td>cmp(x,y)</td>
+    <td>比较两个值</td>
+  </tr>
+  <tr>
+    <td>len(seq)</td>
+    <td>返回序列的长度</td>
+  </tr>
+  <tr>
+    <td>list(seq)</td>
+    <td>把序列转换为列表</td>
+  </tr>
+  <tr>
+    <td>max(args)</td>
+    <td>返回序列或者参数集合中的最大值</td>
+  </tr>
+  <tr>
+    <td>min(args)</td>
+    <td>返回序列或者参数集合中的最小值</td>
+  </tr>
+  <tr>
+    <td>reversed(seq)</td>
+    <td>对序列进行反向迭代</td>
+  </tr>
+  <tr>
+    <td>sorted(seq)</td>
+    <td>返回已排序的包含seq所有元素的列表</td>
+  </tr>
+  <tr>
+    <td>tuple(seq)</td>
+    <td>把序列转换成元组</td>
+  </tr>
+  <tr>
+    <td>append(args)</td>
+    <td>添加元素到列表末尾</td>
+  </tr>
+  <tr>
+    <td>count(seq)</td>
+    <td>统计元素在列表中出现的次数</td>
+  </tr>
+</table>
