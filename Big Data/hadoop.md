@@ -38,9 +38,10 @@
 <h4>1.HDFS的分布式存储实现：</h4>
 <p>HDFS是一个分布式文件系统，去掉分布式，其实就是一个文件系统，通过对元数据进行管理，对上传的数据文件进行层层拆分，实现物理上的分布式存储和逻辑上的统一调度管理</p>
 <ul>
-  <li><strong>主从结构：主节点——namenode，从节点，有很多个datanode</strong></li>
+  <li><strong>主从结构：</strong>主节点——namenode，从节点，有很多个datanode</li>
   <li><strong>namenode：</strong>接收用户操作请求，维护文件目录结构，管理文件与block之间关系，block与datanode之间关系</li>
   <li><strong>datanode：</strong>存储文件，拆分文件为一个个block存储在磁盘上，为保证数据安全，文件会有多个副本</li>    
 </ul>
-<img src="http://blog.fens.me/wp-content/uploads/2013/09/hadoopFamilyRoadmap.png"></img>
+<p>HDFS采用master/slave架构。一个HDFS集群是由一个Namenode和一定数目的Datanodes组成。Namenode是一个中心服务器，负责管理文件系统的名字空间(namespace)以及客户端对文件的访问。集群中的Datanode一般是一个节点一个，负责管理它所在节点上的存储。HDFS暴露了文件系统的名字空间，用户能够以文件的形式在上面存储数据。从内部看，一个文件其实被分成一个或多个数据块，这些块存储在一组Datanode上。Namenode执行文件系统的名字空间操作，比如打开、关闭、重命名文件或目录。它也负责确定数据块到具体Datanode节点的映射。Datanode负责处理文件系统客户端的读写请求。在Namenode的统一调度下进行数据块的创建、删除和复制。</p>
+<img src="http://hadoop.apache.org/docs/r1.0.4/cn/images/hdfsarchitecture.gif"></img>
 
