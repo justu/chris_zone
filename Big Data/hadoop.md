@@ -35,3 +35,12 @@
   <li>Tez™：一种基于Hadoop YARN的通用数据流编程框架，它提供了强大且灵活的引擎来执行任意DAG的任务来处理批量和交互式用例的数据。 Tez被Hado™，Pig™和Hadoop生态系统中的其他框架以及其他商业软件（例如ETL工具）采用，以替代Hadoop™MapReduce作为底层执行引擎。</li>
   <li>ZooKeeper™：分布式应用程序的高性能协调服务。</li>
 </ul>
+<h4>1.HDFS的分布式存储实现：</h4>
+<p>HDFS是一个分布式文件系统，去掉分布式，其实就是一个文件系统，通过对元数据进行管理，对上传的数据文件进行层层拆分，实现物理上的分布式存储和逻辑上的统一调度管理</p>
+<ul>
+  <li><strong>主从结构：主节点——namenode，从节点，有很多个datanode</strong></li>
+  <li><strong>namenode：</strong>接收用户操作请求，维护文件目录结构，管理文件与block之间关系，block与datanode之间关系</li>
+  <li><strong>datanode：</strong>存储文件，拆分文件为一个个block存储在磁盘上，为保证数据安全，文件会有多个副本</li>    
+</ul>
+<img src="http://blog.fens.me/wp-content/uploads/2013/09/hadoopFamilyRoadmap.png"></img>
+
