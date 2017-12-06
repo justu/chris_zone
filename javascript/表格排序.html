@@ -24,6 +24,16 @@
           }
         });
       }
+      function makeSortable(table) {
+        var headers = table.getElementsByTagName("th");
+        for (var i= 0; i < headers.length; i++) {
+          (function(index){
+            headers[i].onclick = function(){
+              sortRows(table, index);
+            }
+          }(i));
+        }
+      }
     </script>
   </head>
   <body>
